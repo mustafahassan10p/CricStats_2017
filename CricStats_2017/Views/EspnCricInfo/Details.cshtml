@@ -1,0 +1,50 @@
+﻿@model CricStats.Models.Cricketer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cricketer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TestAvg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TestAvg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ODIAvg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ODIAvg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.T20Avg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.T20Avg)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
